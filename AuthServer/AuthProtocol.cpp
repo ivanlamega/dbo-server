@@ -6,11 +6,11 @@ bool AuthClient::PacketControl(Packet* pPacket)
 	LPPACKETDATA data = (LPPACKETDATA)pPacket->GetPacketData();
 	/*printf("Paquete: %d, DWORD: %d, WORD: %d, BYTE: %d, WCHAR: %d\n", 
 		sizeof(sUA_LOGIN_REQ), sizeof(DWORD), sizeof(WORD), sizeof(BYTE), sizeof(WCHAR));*/
-	for (int i = 0; i < 84; i++)
+	/*for (int i = 0; i < 84; i++)
 	{
 		printf("%c", data[i]);
 	}
-	printf("\n");
+	printf("\n");*/
 
 	switch (data->wOpCode)
 	{
@@ -39,10 +39,10 @@ void AuthClient::SendLoginRes(sUA_LOGIN_REQ* data)
 	memcpy(passWord, data->awchPasswd, NTL_MAX_SIZE_USERPW_UNICODE);
 	AccountID = GetDBAccountID();
 
-	printf("Recibido: Usuario: %s, Contra: %s, codepage: %x, lowversion: %d, highversion: %d, mac: %d, opcode: %d, tamcodep: %d, tammac: %d, machex: %x\n",
+	/*printf("Recibido: Usuario: %s, Contra: %s, codepage: %x, lowversion: %d, highversion: %d, mac: %d, opcode: %d, tamcodep: %d, tammac: %d, machex: %x\n",
 		data->awchUserId, data->awchPasswd, data->dwCodePage, 
 		data->wLVersion, data->wRVersion, data->abyMacAddress, data->wOpCode, sizeof(data->dwCodePage),
-		sizeof(data->abyMacAddress)), data->abyMacAddress;
+		sizeof(data->abyMacAddress)), data->abyMacAddress;*/
 	sAU_LOGIN_RES lRes;
 	memset(&lRes, 0, sizeof(sAU_LOGIN_RES));
 	lRes.wOpCode = AU_LOGIN_RES;
@@ -64,7 +64,7 @@ void AuthClient::SendLoginRes(sUA_LOGIN_REQ* data)
 		lRes.aServerInfo[x].wCharacterServerPortForClient = pServer->ServerCfg->GetChildInt("CharServerList", snode, "Port");
 		lRes.aServerInfo[x].dwLoad = 1;
 	}
-	printf("opcode: %d\n", lRes.wOpCode);
+	/*printf("opcode: %d\n", lRes.wOpCode);
 	printf("Resultcode: %d\n", lRes.wResultCode);
 	printf("userid: %s\n", lRes.awchUserId);
 	printf("authkey: %s\n", lRes.abyAuthKey);
@@ -88,14 +88,14 @@ void AuthClient::SendLoginRes(sUA_LOGIN_REQ* data)
 		//printf("%s", &test[i]);
 		printf("%c", lRes.aServerInfo[0].szCharacterServerIP[i]);
 	}
-	printf("\n");
+	printf("\n");*/
 	Send((unsigned char*)&lRes, sizeof(lRes));
 }
 
 void AuthClient::SendDisconnectRes(sUA_LOGIN_DISCONNECT_REQ* data)
 {
 	if (data->bIsEnteringCharacterServer) goCharServer = true;
-	printf("size enteringcharacter.. %d", sizeof(data->bIsEnteringCharacterServer));
+	//printf("size enteringcharacter.. %d", sizeof(data->bIsEnteringCharacterServer));
 	sAU_LOGIN_DISCONNECT_RES dRes;
 	memset(&dRes, 0, sizeof(sAU_LOGIN_DISCONNECT_RES));
 	dRes.wOpCode = AU_LOGIN_DISCONNECT_RES;
