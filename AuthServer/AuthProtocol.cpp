@@ -39,10 +39,10 @@ void AuthClient::SendLoginRes(sUA_LOGIN_REQ* data)
 	memcpy(passWord, data->awchPasswd, NTL_MAX_SIZE_USERPW_UNICODE);
 	AccountID = GetDBAccountID();
 
-	/*printf("Recibido: Usuario: %s, Contra: %s, codepage: %x, lowversion: %d, highversion: %d, mac: %d, opcode: %d, tamcodep: %d, tammac: %d, machex: %x\n",
+	printf("Recibido: Usuario: %s, Contra: %s, codepage: %x, lowversion: %d, highversion: %d, mac: %d, opcode: %d, tamcodep: %d, tammac: %d, machex: %x\n",
 		data->awchUserId, data->awchPasswd, data->dwCodePage, 
 		data->wLVersion, data->wRVersion, data->abyMacAddress, data->wOpCode, sizeof(data->dwCodePage),
-		sizeof(data->abyMacAddress)), data->abyMacAddress;*/
+		sizeof(data->abyMacAddress)), data->abyMacAddress;
 	sAU_LOGIN_RES lRes;
 	memset(&lRes, 0, sizeof(sAU_LOGIN_RES));
 	lRes.wOpCode = AU_LOGIN_RES;
@@ -95,7 +95,7 @@ void AuthClient::SendLoginRes(sUA_LOGIN_REQ* data)
 void AuthClient::SendDisconnectRes(sUA_LOGIN_DISCONNECT_REQ* data)
 {
 	if (data->bIsEnteringCharacterServer) goCharServer = true;
-	//printf("size enteringcharacter.. %d", sizeof(data->bIsEnteringCharacterServer));
+	printf("codepage: %d, %d\n", data->dwCodePage, data->bIsEnteringCharacterServer);
 	sAU_LOGIN_DISCONNECT_RES dRes;
 	memset(&dRes, 0, sizeof(sAU_LOGIN_DISCONNECT_RES));
 	dRes.wOpCode = AU_LOGIN_DISCONNECT_RES;

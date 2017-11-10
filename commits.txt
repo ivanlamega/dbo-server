@@ -1,0 +1,11 @@
+commit c44e1fd07a9913ab0277071a7e2e24b3a32dcd23
+Author: Ivan Acevedo <ivan_lamega_13@hotmail.com>
+Date:   Fri Nov 10 09:13:12 2017 -0300
+
+    Comentado todos los printf
+
+commit 1a7d520c5c13c7a7baa2be93c73876a89b1747cb
+Author: Ivan Acevedo <ivan_lamega_13@hotmail.com>
+Date:   Fri Nov 10 09:09:58 2017 -0300
+
+    DBO servidor escrito en c++
