@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CharServer>
+  <!-- Server Configuration -->
+  <Server IP="0.0.0.0" Port="50300" />
+  <MySQL Host="127.0.0.1" Port="3306" Database="dbosnaity" User="root" Password="" />
+  <ServerCount value="1" />
+
+  <!-- Game Data Tables Folder Location -->
+  <GameData Path="../Tables" />
+
+  <!-- Server List Configuration -->
+  <Server1 Name="[TEST SERVER]" Count="1" MaxLoad="100">
+    <Channel1 IP="127.0.0.1" Port="50400" MaxLoad="100" />
+  </Server1>
+</CharServer>

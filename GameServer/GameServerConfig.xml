@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameServer>
+  <!-- Server Configuration -->
+  <Server ID="0" ChannelID="0" IP="0.0.0.0" Port="50400" />
+  <MySQL Host="127.0.0.1" Port="3306" Database="dbosnaity" User="root" Password="" />
+  
+  <!-- Game Data Tables Folder Location -->
+  <GameData Path="../Tables" />
+  
+  <!-- Chat Server Config -->
+  <ChatServer IP="127.0.0.1" Port="50700" />
+  
+  <!-- Multipliers -->
+  <Multipliers MobExp="20" />
+  
+  <!-- Char Server List Configuration -->
+  <CharServerList Count="1">
+    <CharServer1 IP="127.0.0.1" Port="50300" />
+  </CharServerList>
+</GameServer>

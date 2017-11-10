@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{1b4b8604-a6f7-497f-baa1-f09548c2fb83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network">
+      <UniqueIdentifier>{f3004ae9-9eab-4a0f-ae29-b80c496eb338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Thread">
+      <UniqueIdentifier>{bd624c14-27db-404d-89c5-c2a72621c7b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Thread">
+      <UniqueIdentifier>{32a66972-3639-445e-9aa4-bf44a1865c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Profile">
+      <UniqueIdentifier>{9b25b6f9-95f1-4054-bc7f-f383f70256ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Profile">
+      <UniqueIdentifier>{c4f657d2-4d7c-430c-ad5a-755265beb0ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="GameNetwork.h">
+      <Filter>Header Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="GameProtocol.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterManager.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterProfile.cpp">
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="MobProfile.cpp">
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcProfile.cpp">
+      <Filter>Source Files\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeManager.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameProtocol.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterManager.h">
+      <Filter>Header Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>Header Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterProfile.h">
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="MobProfile.h">
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcProfile.h">
+      <Filter>Header Files\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeManager.h">
+      <Filter>Header Files\Thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="GameServerConfig.xml" />
+  </ItemGroup>
+</Project>

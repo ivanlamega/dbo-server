@@ -1,0 +1,1092 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{854627f1-fed8-49b3-b756-f20374ef00b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network">
+      <UniqueIdentifier>{06baab74-5843-4792-bb6b-c52d3d56c76d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Database">
+      <UniqueIdentifier>{92a5b4f7-39a3-4f81-b4ad-f5e1a5aa9bb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database">
+      <UniqueIdentifier>{88472345-a0d1-4462-8154-bb68ea04aa79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Config">
+      <UniqueIdentifier>{661f1d24-5db1-452a-b054-665fae0e0751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config">
+      <UniqueIdentifier>{e867cb52-6f5b-444b-b03b-d52a7b820fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table">
+      <UniqueIdentifier>{471f2889-8ffe-40ed-9c17-ef2b09124b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table">
+      <UniqueIdentifier>{48abbf43-ddd8-4852-9c6c-dfa4467174c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread">
+      <UniqueIdentifier>{b09d9ca1-6719-411e-b84d-0f8bfdc55654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Thread">
+      <UniqueIdentifier>{2c21533b-760b-4cd9-adc8-efdb9aae4577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{e7c7d193-4d41-4a19-9cf0-188b23eaf380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{09caee29-04f0-45f6-85fe-9eb63f2cef83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network\Session">
+      <UniqueIdentifier>{0d533c2f-9eef-4c93-b8cf-87d06e84d463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network\Session">
+      <UniqueIdentifier>{c318a3a8-4335-4de2-bc4d-08d0b041484f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameLib">
+      <UniqueIdentifier>{16e64cac-94d9-41f9-976b-411de55292e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameLib">
+      <UniqueIdentifier>{4a9dc65d-71f3-4a7a-89d5-b0e444214480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\XML">
+      <UniqueIdentifier>{ed588459-7261-4a87-a5cb-833a36c90c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\XML">
+      <UniqueIdentifier>{103ad9ef-5c37-4257-a0ae-7d659184f65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cipher">
+      <UniqueIdentifier>{e271c43b-d451-4854-9640-a6f185607ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Cipher">
+      <UniqueIdentifier>{c5c1b3cf-3b97-40af-aec1-defef141f053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\World">
+      <UniqueIdentifier>{64668a4f-eb7e-4323-ae3c-91338c6d6330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\World">
+      <UniqueIdentifier>{6e8856de-eeed-4e21-807b-1a7c9670d7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\Character">
+      <UniqueIdentifier>{ea44319e-9083-4213-a508-118232fcbb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\Character">
+      <UniqueIdentifier>{1b1dc794-a78c-4620-9653-f69103a61612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\Item">
+      <UniqueIdentifier>{055ea458-0e58-4e1c-abf8-eb03d0706d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\Item">
+      <UniqueIdentifier>{84aa3bbf-f878-4a2b-a750-b2a7dcfdb3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\Skill">
+      <UniqueIdentifier>{1d2447eb-9a52-4871-82d8-ed23984cdc71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\Skill">
+      <UniqueIdentifier>{9c0f0dff-5e07-46c5-be69-01e87a1988e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\Misc">
+      <UniqueIdentifier>{c4496c7d-8c82-4096-be4c-8134eef14ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\Misc">
+      <UniqueIdentifier>{0c2101b1-eeff-42af-af24-446732f098b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\Party">
+      <UniqueIdentifier>{25e34f1b-46dc-467a-89ad-6dc3608c5fc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\Party">
+      <UniqueIdentifier>{b568514f-28ea-4277-9cec-b7398b54de98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\Quest">
+      <UniqueIdentifier>{523b9f9e-7f8a-4993-942d-ef63cf276cab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\Quest">
+      <UniqueIdentifier>{59e4cb2b-feb4-455a-aee6-e5020d9957b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\Text">
+      <UniqueIdentifier>{000cf4d3-0cf0-44ce-93d1-d649cc9d616c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\Text">
+      <UniqueIdentifier>{8f600ae6-c745-434a-82ee-96fcf0f73c1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\Rule">
+      <UniqueIdentifier>{cf1db326-ac2d-441c-9b30-7785bec32b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\Rule">
+      <UniqueIdentifier>{d379065c-dcf6-4086-bef5-ad57372d97c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logic">
+      <UniqueIdentifier>{8049b7da-2352-49d8-9a15-e8f1c65214a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic">
+      <UniqueIdentifier>{b27dcb4d-0441-4bf0-b3b1-d7ada3eda732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table\TwTable">
+      <UniqueIdentifier>{b05d39c8-81b2-4dba-83f6-a56009f6eb5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table\TwTable">
+      <UniqueIdentifier>{c67c89c9-5628-41a7-85b0-dd0788bd8459}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Packet.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Source Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Table.cpp">
+      <Filter>Source Files\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="GameString.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Iocp.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Encoder.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Acceptor.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Session.cpp">
+      <Filter>Source Files\Network\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionList.cpp">
+      <Filter>Source Files\Network\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkProcessor.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Connector.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerApp.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlBattle.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlBBox.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlBudokai.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlCharacter.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlCharacterState.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlGuild.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlItem.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlLine.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlMovement.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlNetP.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlObject.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPacketAU.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPacketCU.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPacketGU.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPacketTU.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPacketUA.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPacketUC.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPacketUG.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPacketUT.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlPetition.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlRandom.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlReport.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlService.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlSkill.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlSphere.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlSvrMath.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlVector.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlWorld.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="TableContainer.cpp">
+      <Filter>Source Files\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLDoc.cpp">
+      <Filter>Source Files\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Serializer.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="TableFileNameList.cpp">
+      <Filter>Source Files\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlBitFlagManager.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSerializer.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Cipher.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherBase.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherDes.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherTwofish.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherAES.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherTripleDES.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherBlowfish.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherMD5.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherRSA.cpp">
+      <Filter>Source Files\Cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="PCTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="NewbieTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="MerchantTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="MobTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusTransformTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManiaTimeTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GuideHintTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicDropTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemOptionTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalDropTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="LegendaryDropTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperiorDropTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="UseItemTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemEffectTable.cpp">
+      <Filter>Source Files\Table\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="SetItemTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="EachDropTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeDropTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ExcellentDropTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonBallTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonBallRewardTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionTable.cpp">
+      <Filter>Source Files\Table\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatCommandTable.cpp">
+      <Filter>Source Files\Table\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionLinkTable.cpp">
+      <Filter>Source Files\Table\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaTable.cpp">
+      <Filter>Source Files\Table\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptLinkTable.cpp">
+      <Filter>Source Files\Table\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CharmTable.cpp">
+      <Filter>Source Files\Table\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestDropTable.cpp">
+      <Filter>Source Files\Table\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestItemTable.cpp">
+      <Filter>Source Files\Table\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestProbabilityTable.cpp">
+      <Filter>Source Files\Table\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestTextDataTable.cpp">
+      <Filter>Source Files\Table\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestNarrationTable.cpp">
+      <Filter>Source Files\Table\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestRewardTable.cpp">
+      <Filter>Source Files\Table\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="HTBSetTable.cpp">
+      <Filter>Source Files\Table\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillTable.cpp">
+      <Filter>Source Files\Table\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="ChattingFilterTable.cpp">
+      <Filter>Source Files\Table\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="TextAllTable.cpp">
+      <Filter>Source Files\Table\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="TextServerTable.cpp">
+      <Filter>Source Files\Table\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldZoneTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMapTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="LandMarkTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldPathTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldPlayTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="PortalTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcSpeechTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeQuestTable.cpp">
+      <Filter>Source Files\Table\Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="RankBattleTable.cpp">
+      <Filter>Source Files\Table\Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="BudokaiTable.cpp">
+      <Filter>Source Files\Table\Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonTable.cpp">
+      <Filter>Source Files\Table\Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="DojoTable.cpp">
+      <Filter>Source Files\Table\Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicObjectTable.cpp">
+      <Filter>Source Files\Table\World</Filter>
+    </ClCompile>
+    <ClCompile Include="VehicleTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemRecipeTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="MobMovePatternTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemUpgradeTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemMixMachineTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="HLSItemTable.cpp">
+      <Filter>Source Files\Table\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="HLSMerchantTable.cpp">
+      <Filter>Source Files\Table\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlStringHandler.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="NtlAvatar.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic.cpp">
+      <Filter>Source Files\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TwTableAll.cpp">
+      <Filter>Source Files\Table\TwTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TableReader.cpp">
+      <Filter>Source Files\Table\TwTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TwNewbieTable.cpp">
+      <Filter>Source Files\Table\TwTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TwPC.cpp">
+      <Filter>Source Files\Table\TwTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TwWorldTable.cpp">
+      <Filter>Source Files\Table\TwTable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Network.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.h">
+      <Filter>Header Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Table.h">
+      <Filter>Header Files\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketAddr.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="GameString.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Header Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Header Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadException.h">
+      <Filter>Header Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutex.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkList.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Iocp.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Encoder.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularQueue.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="NetBuffer.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Acceptor.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files\Network\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionFactory.h">
+      <Filter>Header Files\Network\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionMap.h">
+      <Filter>Header Files\Network\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionList.h">
+      <Filter>Header Files\Network\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkArray.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkProcessor.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Connector.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerApp.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlActionPattern.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlAdmin.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlAvatar.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlBattle.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlBBox.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlBudokai.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlCharacter.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlCharacterState.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlChat.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlCSArchitecture.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlDirection.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlDojo.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlDragonBall.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlFriend.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlGuild.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlHlsItem.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlItem.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlLine.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlMail.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlMatch.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlMovement.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlNetP.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlObject.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketAll.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketAU.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketCommon.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketCU.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketGU.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketTU.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketUA.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketUC.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketUG.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketUT.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPacketUtil.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlParty.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPartyDungeon.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPet.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlPetition.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlQuest.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlRandom.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlRankBattle.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlReport.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlResultCode.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlRide.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlServer.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlService.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlSharedBotSystemDef.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlSharedDef.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlSharedType.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlSkill.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlSphere.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlSvrMath.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlSystemEffect.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlTeleport.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlTimeQuest.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlTLQ.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlVector.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWorld.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="TableContainer.h">
+      <Filter>Header Files\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLDoc.h">
+      <Filter>Header Files\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializer.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlStringHandler.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="TableFileNameList.h">
+      <Filter>Header Files\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlBitFlagManager.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSerializer.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Cipher.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherBase.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherDes.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherTwofish.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherAES.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherTripleDES.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherBlowfish.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherMD5.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherRSA.h">
+      <Filter>Header Files\Cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="PCTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="NewbieTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="MerchantTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="MobTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusTransformTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManiaTimeTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="GuideHintTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicDropTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemOptionTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalDropTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="LegendaryDropTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperiorDropTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="UseItemTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemEffectTable.h">
+      <Filter>Header Files\Table\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="SetItemTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="EachDropTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeDropTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcellentDropTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonBallTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonBallRewardTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionTable.h">
+      <Filter>Header Files\Table\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatCommandTable.h">
+      <Filter>Header Files\Table\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionLinkTable.h">
+      <Filter>Header Files\Table\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaTable.h">
+      <Filter>Header Files\Table\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptLinkTable.h">
+      <Filter>Header Files\Table\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CharmTable.h">
+      <Filter>Header Files\Table\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestDropTable.h">
+      <Filter>Header Files\Table\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestItemTable.h">
+      <Filter>Header Files\Table\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestProbabilityTable.h">
+      <Filter>Header Files\Table\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestTextDataTable.h">
+      <Filter>Header Files\Table\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestNarrationTable.h">
+      <Filter>Header Files\Table\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestRewardTable.h">
+      <Filter>Header Files\Table\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="HTBSetTable.h">
+      <Filter>Header Files\Table\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillTable.h">
+      <Filter>Header Files\Table\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="ChattingFilterTable.h">
+      <Filter>Header Files\Table\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="TextAllTable.h">
+      <Filter>Header Files\Table\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="TextServerTable.h">
+      <Filter>Header Files\Table\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldZoneTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMapTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="LandMarkTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldPathTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldPlayTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="PortalTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcSpeechTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeQuestTable.h">
+      <Filter>Header Files\Table\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="RankBattleTable.h">
+      <Filter>Header Files\Table\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="BudokaiTable.h">
+      <Filter>Header Files\Table\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonTable.h">
+      <Filter>Header Files\Table\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="DojoTable.h">
+      <Filter>Header Files\Table\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicObjectTable.h">
+      <Filter>Header Files\Table\World</Filter>
+    </ClInclude>
+    <ClInclude Include="VehicleTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemRecipeTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="MobMovePatternTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemUpgradeTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemMixMachineTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSItemTable.h">
+      <Filter>Header Files\Table\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSMerchantTable.h">
+      <Filter>Header Files\Table\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="TableAll.h">
+      <Filter>Header Files\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic.h">
+      <Filter>Header Files\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="TwTableAll.h">
+      <Filter>Header Files\Table\TwTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TwNewbieTable.h">
+      <Filter>Header Files\Table\TwTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TableReader.h">
+      <Filter>Header Files\Table\TwTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TwPC.h">
+      <Filter>Header Files\Table\TwTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TwWorldTable.h">
+      <Filter>Header Files\Table\TwTable</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
