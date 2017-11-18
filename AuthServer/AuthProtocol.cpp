@@ -64,6 +64,7 @@ void AuthClient::SendLoginRes(sUA_LOGIN_REQ* data)
 		lRes.aServerInfo[x].wCharacterServerPortForClient = pServer->ServerCfg->GetChildInt("CharServerList", snode, "Port");
 		lRes.aServerInfo[x].dwLoad = 1;
 	}
+	printf("size accountid: %d\n", sizeof(lRes.accountId));
 	/*printf("opcode: %d\n", lRes.wOpCode);
 	printf("Resultcode: %d\n", lRes.wResultCode);
 	printf("userid: %s\n", lRes.awchUserId);
@@ -77,7 +78,7 @@ void AuthClient::SendLoginRes(sUA_LOGIN_REQ* data)
 	printf("characterserverport: %d\n", lRes.aServerInfo[0].wCharacterServerPortForClient);
 	printf("dwload: %d\n", lRes.aServerInfo[0].dwLoad);
 	printf("size aserverinfo: %d\n", sizeof(lRes.aServerInfo));
-	printf("size accountid: %d\n", sizeof(lRes.accountId));
+	
 	printf("genauthkey: %d, %d\n", GenAuthKey(), time(NULL));
 	char test;
 	printf("size char: %d", sizeof(test));

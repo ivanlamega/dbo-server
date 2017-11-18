@@ -68,6 +68,7 @@ END_PROTOCOL()
 //------------------------------------------------------------------
 BEGIN_PROTOCOL(UC_CHARACTER_DEL_REQ)
 	CHARACTERID		charId;
+	WCHAR			awchPassword[NTL_MAX_SIZE_USERPW_UNICODE + 1];
 END_PROTOCOL()
 //------------------------------------------------------------------
 BEGIN_PROTOCOL(UC_CHARACTER_SELECT_REQ)
@@ -85,9 +86,8 @@ BEGIN_PROTOCOL(UC_CHARACTER_LOAD_REQ)
 END_PROTOCOL()
 //------------------------------------------------------------------
 BEGIN_PROTOCOL(UC_CHARACTER_DEL_CANCEL_REQ)
-	ACCOUNTID		accountId;
 	CHARACTERID		charId;
-	SERVERFARMID	serverFarmId;
+	WCHAR			awchPassword[NTL_MAX_SIZE_USERPW_UNICODE + 1];
 END_PROTOCOL()
 //------------------------------------------------------------------
 BEGIN_PROTOCOL( UC_CONNECT_WAIT_CHECK_REQ )

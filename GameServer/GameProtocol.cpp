@@ -26,7 +26,7 @@ bool GameClient::PacketControl(Packet* pPacket)
 		SendCharSkillInfo();
 		SendCharBuffsInfo();
 		SendCharHTBInfo();
-		SendCharInfo();
+		//SendCharInfo();
 		// Quest List
 		SendCharQuickSlotInfo();
 		SendAvatarWarFogInfo();

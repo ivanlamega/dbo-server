@@ -5,6 +5,7 @@ bool CharClient::PacketControl(Packet* pPacket)
 {
 	LPPACKETDATA data = (LPPACKETDATA)pPacket->GetPacketData();
 	Logger::SavePacket(pPacket->GetPacketBuffer());
+	Logger::Log("Recv Opcode[%d]: %s\n", data->wOpCode, NtlGetPacketName_UC(data->wOpCode));
 
 	switch (data->wOpCode)
 	{
@@ -12,11 +13,11 @@ bool CharClient::PacketControl(Packet* pPacket)
 	case UC_CHARACTER_SERVERLIST_REQ: SendServerlist(false); break;
 	//case UC_CHARACTER_SERVERLIST_ONE_REQ: SendServerlist(true); break;
 	case UC_CHARACTER_ADD_REQ: SendCharCreateRes((sUC_CHARACTER_ADD_REQ*)data); break;
-	//case UC_CHARACTER_DEL_REQ: SendCharDelRes((sUC_CHARACTER_DEL_REQ*)data); break;
+	case UC_CHARACTER_DEL_REQ: SendCharDelRes((sUC_CHARACTER_DEL_REQ*)data); break;
 	case UC_CHARACTER_SELECT_REQ: SendCharSelectRes((sUC_CHARACTER_SELECT_REQ*)data); break;
 	case UC_CHARACTER_EXIT_REQ: SendCharExitRes((sUC_CHARACTER_EXIT_REQ*)data); break;
 	case UC_CHARACTER_LOAD_REQ: SendCharLoadResult((sUC_CHARACTER_LOAD_REQ*)data); break;
-	//case UC_CHARACTER_DEL_CANCEL_REQ: SendCharDelCancelRes((sUC_CHARACTER_DEL_CANCEL_REQ*)data); break;
+	case UC_CHARACTER_DEL_CANCEL_REQ: SendCharDelCancelRes((sUC_CHARACTER_DEL_CANCEL_REQ*)data); break;
 	case UC_CONNECT_WAIT_CHECK_REQ: SendCharConnWaitCheckRes((sUC_CONNECT_WAIT_CHECK_REQ*)data); break;
 	case UC_CONNECT_WAIT_CANCEL_REQ: SendCancelWaitReq((sUC_CONNECT_WAIT_CANCEL_REQ*)data); break;
 	//case UC_CHARACTER_RENAME_REQ: SendCharRenameRes((sUC_CHARACTER_RENAME_REQ*)data); break;
@@ -49,12 +50,14 @@ void CharClient::SendLoginResult(sUC_LOGIN_REQ* data)
 	lRes.dwUnknow = 0;
 	Send((unsigned char*)&lRes, sizeof(lRes));
 
-	printf("resultcode: %d, serverfarmid: %d, dwracedallowedflag: %d, unknown: %d",
-		sizeof(lRes.wResultCode), sizeof(lRes.lastServerFarmId), sizeof(lRes.dwRaceAllowedFlag), sizeof(lRes.dwUnknow));
+	/*printf("resultcode: %d, serverfarmid: %d, dwracedallowedflag: %d, unknown: %d\n",
+		sizeof(lRes.wResultCode), sizeof(lRes.lastServerFarmId), sizeof(lRes.dwRaceAllowedFlag), sizeof(lRes.dwUnknow));*/
 }
 
 void CharClient::SendServerlist(bool one)
 {
+	//printf("server count: %d\n", pServer->ServerCfg->GetInt("ServerCount"));
+	printf("UC_CHAR_SERVERLIST_REQ\n");
 	for (int i = 0; i < pServer->ServerCfg->GetInt("ServerCount"); i++)
 	{
 		char snode[20];
@@ -67,6 +70,9 @@ void CharClient::SendServerlist(bool one)
 		sinfo.serverFarmInfo.byServerStatus = DBO_SERVER_STATUS_UP;
 		sinfo.serverFarmInfo.dwLoad = 1;
 		sinfo.serverFarmInfo.dwMaxLoad = pServer->ServerCfg->GetInt(snode, "MaxLoad");
+		/*printf("maxLoad: %d, size: %d, size2%d\n", 
+			sinfo.serverFarmInfo.dwMaxLoad, sizeof(sinfo.serverFarmInfo.dwMaxLoad),
+			sizeof(pServer->ServerCfg->GetInt(snode, "MaxLoad")));*/
 		Send((unsigned char*)&sinfo, sizeof(sinfo));
 	}
 
@@ -85,6 +91,14 @@ void CharClient::SendServerlist(bool one)
 		slres.wOpCode = CU_CHARACTER_SERVERLIST_RES;
 		slres.wResultCode = CHARACTER_SUCCESS;
 		Send((unsigned char*)&slres, sizeof(slres));
+
+		unsigned char *test = (unsigned char*)&slres;
+		printf("hexadecimal: %x\n", slres);
+		for (int i = 0; i < sizeof(slres); i++)
+		{
+			printf("%x", test[i]);
+		}
+		printf("\n");
 	}
 }
 
@@ -93,7 +107,7 @@ void CharClient::SendCharLoadResult(sUC_CHARACTER_LOAD_REQ* data)
 	CurrServerID = data->serverFarmId;
 	AccountID = data->accountId;
 	DBUpdateLastServer();
-
+	printf("sUC_CHARACTER_LOAD_REQ %d", data->wOpCode);
 	sCU_SERVER_CHANNEL_INFO cninfo;
 	memset(&cninfo, 0, sizeof(sCU_SERVER_CHANNEL_INFO));
 	cninfo.wOpCode = CU_SERVER_CHANNEL_INFO;
@@ -113,12 +127,16 @@ void CharClient::SendCharLoadResult(sUC_CHARACTER_LOAD_REQ* data)
 		cninfo.serverChannelInfo[x].bIsScramble = false;
 	}
 	Send((unsigned char*)&cninfo, sizeof(cninfo));
+	//printf("size sCU_SERVER_CHANNEL_INFO: %d", sizeof(cninfo));
 
 	sCU_CHARACTER_INFO cinfo;
 	memset(&cinfo, 0, sizeof(sCU_CHARACTER_INFO));
+	printf("pc sumarry size total: %d\npc summary 1 size: %d\n", sizeof(cinfo.sPcData),
+		sizeof(cinfo.sPcData[0]));
 	GetDBAccCharListData(cinfo);
 	cinfo.wOpCode = CU_CHARACTER_INFO;
 	Send(&cinfo, sizeof(cinfo));
+	//printf("size sCU_CHARACTER_INFO: %d", sizeof(cinfo));
 
 	Logger::Log("Loaded %d characters from client[%d] (%d)\n", cinfo.byCount, this, AccountID);
 
@@ -130,6 +148,7 @@ void CharClient::SendCharLoadResult(sUC_CHARACTER_LOAD_REQ* data)
 	clres.byOpenCharSlots = 8;
 	clres.byVIPCharSlots = 0;
 	Send((unsigned char*)&clres, sizeof(clres));
+	//printf("size sCU_CHARACTER_LOAD_RES: %d", sizeof(clres));
 }
 
 void CharClient::SendCharExitRes(sUC_CHARACTER_EXIT_REQ* data)
@@ -243,6 +262,7 @@ void CharClient::SendCharCreateRes(sUC_CHARACTER_ADD_REQ* data)
 
 void CharClient::SendCharDelRes(sUC_CHARACTER_DEL_REQ* data)
 {
+	printf("password: %c, %d\n", data->awchPassword, data->awchPassword);
 	sCU_CHARACTER_DEL_RES Res;
 	memset(&Res, 0, sizeof(Res));
 	Res.wOpCode = CU_CHARACTER_DEL_RES;
@@ -256,6 +276,7 @@ void CharClient::SendCharDelRes(sUC_CHARACTER_DEL_REQ* data)
 
 void CharClient::SendCharDelCancelRes(sUC_CHARACTER_DEL_CANCEL_REQ* data)
 {
+	printf("password: %c, %d\n", data->awchPassword, data->awchPassword);
 	sCU_CHARACTER_DEL_CANCEL_RES Res;
 	memset(&Res, 0, sizeof(Res));
 	Res.wOpCode = CU_CHARACTER_DEL_CANCEL_RES;
