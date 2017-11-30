@@ -446,7 +446,7 @@ struct sCHARSTATE_HTB
 	BYTE				byStepCount;	// HTB 스텝 개수
 	BYTE				byCurStep;		// 현재 스텝
 	BYTE				byResultCount;	// HTB 스킬 결과 개수
-	sHTBSKILL_RESULT	aHTBSkillResult[NTL_HTB_MAX_SKILL_COUNT_IN_SET]; // HTB 스킬 결과
+	sHTBSKILL_RESULT	aHTBSkillResult[NTL_HTB_MAX_SKILL_COUNT_IN_SET]; // size 84 c/u HTB 스킬 결과
 };
 //-----------------------------------------------------------------------------------
 struct sCHARSTATE_SANDBAG

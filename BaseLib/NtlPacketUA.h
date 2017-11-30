@@ -6,7 +6,7 @@
 enum eOPCODE_UA
 {
 //<<<<<<< HEAD
-	UA_OPCODE_BEGIN = 101,
+	UA_OPCODE_BEGIN = 100,
 
 //=======
 	//UA_OPCODE_BEGIN = 100,
@@ -14,7 +14,7 @@ enum eOPCODE_UA
 	UA_LOGIN_REQ,
 	#else
 	//>>>>>>> d23e846e5701bea5d1f3006f0d9cdca96f9308a4
-	UA_LOGIN_REQ = UA_OPCODE_BEGIN,
+	UA_LOGIN_REQ,
 	#endif
 	UA_LOGIN_REQ_KOREA_CJ,
 	//<<<<<<< HEAD

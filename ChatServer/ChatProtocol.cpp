@@ -52,11 +52,12 @@ void ChatClient::SendChatSay(sUT_CHAT_MESSAGE_SAY* pData)
 	sTU_CHAT_MESSAGE_SAY pSay;
 	memset(&pSay, 0, sizeof(pSay));
 	pSay.wOpCode = TU_CHAT_MESSAGE_SAY;
-	pSay.hSubject = CharSerialID;
+	pSay.hSubject = 1;//CharSerialID;
 	memcpy(pSay.awchSenderCharName, charName, NTL_MAX_SIZE_CHAR_NAME_UNICODE);
 	memcpy(pSay.awchMessage, pData->awchMessage, NTL_MAX_LENGTH_OF_CHAT_MESSAGE_UNICODE);
 	pSay.wMessageLengthInUnicode = pData->wMessageLengthInUnicode;
 	Logger::Log("%s says: %s\n", GameString(pSay.awchSenderCharName).c_str(), GameString(pSay.awchMessage).c_str());
+	printf("SerialId: %d, charName: %s\n", pSay.hSubject, pSay.awchSenderCharName);
 	pServer->GetChatManager()->SendAll2(&pSay, sizeof(pSay),this);
 	Send(&pSay, sizeof(pSay));
 }

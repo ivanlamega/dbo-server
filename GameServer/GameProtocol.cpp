@@ -13,7 +13,9 @@ bool GameClient::PacketControl(Packet* pPacket)
 	case UG_GAME_ENTER_REQ: {
 		SendGameEnterRes((sUG_GAME_ENTER_REQ*)data);
 //<<<<<<< HEAD
+		Sleep(500);
 		SendCharInfo();
+		Sleep(500);
 		//SendCharItemInfo();
 		//SendCharSkillInfo();
 		//SendCharBuffsInfo();
@@ -23,13 +25,19 @@ bool GameClient::PacketControl(Packet* pPacket)
 		//SendAvatarWarFogInfo();
 //=======
 		SendCharItemInfo();
+		Sleep(500);
 		SendCharSkillInfo();
+		Sleep(500);
 		SendCharBuffsInfo();
+		Sleep(500);
 		SendCharHTBInfo();
+		Sleep(500);
 		//SendCharInfo();
 		// Quest List
 		SendCharQuickSlotInfo();
+		Sleep(500);
 		SendAvatarWarFogInfo();
+		Sleep(500);
 //>>>>>>> d23e846e5701bea5d1f3006f0d9cdca96f9308a4
 		SendCharInfoEnd();
 	} break;
@@ -37,8 +45,11 @@ bool GameClient::PacketControl(Packet* pPacket)
 	case UG_AUTH_KEY_FOR_COMMUNITY_SERVER_REQ: SendAuthkeyCommSrvRes(); break;
 	case UG_ENTER_WORLD: {
 		SendNtlMemberNfy();
+		Sleep(500);
 		SendServerContents();
+		Sleep(500);
 		SendCharWorldInfo();
+		Sleep(500);
 		SendCharWorldInfoEnd();
 	} break;
 	case UG_SERVER_COMMAND: CheckCommand((sUG_SERVER_COMMAND*)data); break;
@@ -1034,6 +1045,9 @@ void GameClient::SendCharInfo()
 	memset(&charInfo, 0xFF, sizeof(charInfo));
 	charInfo.wOpCode = GU_AVATAR_CHAR_INFO;
 
+
+	printf("sCharStateDetail: %d\n", 
+		sizeof(charInfo.sCharState.sCharStateDetail));
 	pProfile->LoadCharacterData();
 	pProfile->CalculateAtributes();
 
@@ -1051,6 +1065,7 @@ void GameClient::SendCharInfo()
 void GameClient::SendCharWorldInfo()
 {
 	sGU_AVATAR_WORLD_INFO wInfo;
+	printf("size: sDojoData %d", sizeof(wInfo.sDojoData));
 	memset(&wInfo, 0, sizeof(wInfo));
 	wInfo.wOpCode = GU_AVATAR_WORLD_INFO;
 	pProfile->LoadWorldInfoData();
