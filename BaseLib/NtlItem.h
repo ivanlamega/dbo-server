@@ -1001,7 +1001,53 @@ struct sITEM_STATE
 
 
 // 아이템 전체 정보
+
+// by Szczeepan
+struct sITEM_EFFECT
+{
+	WORD            wType;
+	DWORD            dwValue;
+};
+
+
+// by Szczeepan
+struct sITEM_EXTRA_EFFECT
+{
+	WORD            wType;
+	DWORD            dwValue;
+};
+
+
+// 아이템 전체 정보
 struct sITEM_PROFILE
+{
+	HOBJECT            handle;            // 아이템 handle
+	TBLIDX            tblidx;            // item table index
+	BYTE            byPlace;        // eCONTAINER_TYPE
+	BYTE            byPos;
+	BYTE            byStackcount;
+	BYTE            byRank;
+	BYTE            byCurDur;        // 내구도
+	bool            bNeedToIdentify;
+	BYTE            byGrade;        // 아이템 업그레이드 등급
+	BYTE            byBattleAttribute;        // 진기맹여락 cf) NtlBattle.h eBATTLE_ATTRIBUTE
+
+
+	BYTE            byRestrictType;            // 귀속상태 eITEM_RESTRICT_TYPE
+	WCHAR            awchMaker[NTL_MAX_SIZE_CHAR_NAME_UNICODE + 1]; // 제작자
+
+
+	TBLIDX            aOptionTblidx[NTL_MAX_OPTION_IN_ITEM];
+
+
+	sITEM_EFFECT    aitemEffect[6]; // by Szczeepan
+	sITEM_EXTRA_EFFECT aitemExtraEffect[2];// by Szczeepan
+	BYTE            byDurationType; //eDURATIONTYPE
+	DBOTIME            nUseStartTime;// 인벤토리에 들어온 날짜
+	DBOTIME            nUseEndTime;// 사용만료 기간
+	//BYTE            unknown1[48];
+};
+/*struct sITEM_PROFILE
 {
 	HOBJECT			handle;			// 아이템 handle
 	TBLIDX			tblidx;			// item table index
@@ -1022,7 +1068,8 @@ struct sITEM_PROFILE
 	BYTE			byDurationType; //eDURATIONTYPE
 	DBOTIME			nUseStartTime;// 인벤토리에 들어온 날짜
 	DBOTIME			nUseEndTime;// 사용만료 기간
-};
+};*/
+
 // 뱅크 아이템 전체 정보
 /*struct sBANK_PROFILE
 {

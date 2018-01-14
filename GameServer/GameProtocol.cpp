@@ -13,9 +13,7 @@ bool GameClient::PacketControl(Packet* pPacket)
 	case UG_GAME_ENTER_REQ: {
 		SendGameEnterRes((sUG_GAME_ENTER_REQ*)data);
 //<<<<<<< HEAD
-		Sleep(500);
 		SendCharInfo();
-		Sleep(500);
 		//SendCharItemInfo();
 		//SendCharSkillInfo();
 		//SendCharBuffsInfo();
@@ -25,19 +23,13 @@ bool GameClient::PacketControl(Packet* pPacket)
 		//SendAvatarWarFogInfo();
 //=======
 		SendCharItemInfo();
-		Sleep(500);
 		SendCharSkillInfo();
-		Sleep(500);
 		SendCharBuffsInfo();
-		Sleep(500);
 		SendCharHTBInfo();
-		Sleep(500);
 		//SendCharInfo();
 		// Quest List
 		SendCharQuickSlotInfo();
-		Sleep(500);
 		SendAvatarWarFogInfo();
-		Sleep(500);
 //>>>>>>> d23e846e5701bea5d1f3006f0d9cdca96f9308a4
 		SendCharInfoEnd();
 	} break;
@@ -45,11 +37,8 @@ bool GameClient::PacketControl(Packet* pPacket)
 	case UG_AUTH_KEY_FOR_COMMUNITY_SERVER_REQ: SendAuthkeyCommSrvRes(); break;
 	case UG_ENTER_WORLD: {
 		SendNtlMemberNfy();
-		Sleep(500);
 		SendServerContents();
-		Sleep(500);
 		SendCharWorldInfo();
-		Sleep(500);
 		SendCharWorldInfoEnd();
 	} break;
 	case UG_SERVER_COMMAND: CheckCommand((sUG_SERVER_COMMAND*)data); break;
@@ -994,6 +983,7 @@ void GameClient::CheckCommand(sUG_SERVER_COMMAND* pData)
 
 void GameClient::SendCharReadyRes(sUG_CHAR_READY* pData)
 {
+	printf("agregado online");
 	pProfile->SetAvatartype(pData->byAvatarType);
 	pProfile->RemoveOnlineData();
 	pProfile->InsertOnlineData();

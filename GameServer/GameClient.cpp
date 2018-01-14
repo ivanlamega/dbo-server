@@ -65,6 +65,7 @@ int GameClient::OnDispatch(Packet* pPacket)
 void GameClient::Send(void* pData, int nSize)
 {
 	Send(pData, nSize, this->GetHandle());
+	Sleep(200);
 }
 
 void GameClient::Send(void* pData, int nSize, int nHandle)

@@ -1,7 +1,11 @@
 #include "AuthNetwork.h"
+#include <NtlPacketCU.h>
 
 int main(int argc, char* argv[])
 {
+	Logger::Log("Tam pcSumary: %i, chara_info %i, delinfo %i", sizeof sPC_SUMMARY, sizeof sCU_CHARACTER_INFO,
+		sizeof sDELETE_WAIT_CHARACTER_INFO);
+
 	AuthServer app;
 
 	int rc = app.Create(argc, argv);

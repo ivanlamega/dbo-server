@@ -23,8 +23,11 @@ struct sFRIEND_FULL_DATA
 struct sFRIEND_FULL_INFO
 {
 	bool		bIsBlack;
+	WORD wUnknown1;
+	BYTE byUnknown1;
 	CHARACTERID charID;
 	WCHAR		wchName[NTL_MAX_SIZE_CHAR_NAME_UNICODE + 1];
+	WORD wUnknown2;
 };
 
 struct sFRIEND_FULL_LIST
